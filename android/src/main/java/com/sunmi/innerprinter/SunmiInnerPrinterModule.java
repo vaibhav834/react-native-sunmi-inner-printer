@@ -87,8 +87,8 @@ public class SunmiInnerPrinterModule extends ReactContextBaseJavaModule {
         super(reactContext);
         reactApplicationContext = reactContext;
         Intent intent = new Intent();
-        intent.setPackage("woyou.aidlservice.jiuiv5");
-        intent.setAction("woyou.aidlservice.jiuiv5.IWoyouService");
+        intent.setPackage("com.sunmi.extprinterservice");
+        intent.setAction("com.sunmi.extprinterservice.PrinterService");
         reactContext.startService(intent);
         reactContext.bindService(intent, connService, Context.BIND_AUTO_CREATE);
         bitMapUtils = new BitmapUtils(reactContext);
